@@ -1,7 +1,7 @@
 import reflex as rx
 from reflex_web.components.link_icon import link_icon
 from reflex_web.components.info_text import info_text
-from reflex_web.styles.styles import Size as Size
+import reflex_web.constants as url
 
 
 def header() -> rx.Component:
@@ -23,7 +23,7 @@ def header() -> rx.Component:
                     '@annieamod',
                 ),
                 rx.hstack(
-                    link_icon('https://www.instagram.com/annieamrod/'),
+                    link_icon(url.INSTAGRAM_URL),
                     margin_top='var(--space-2)'
                 ),
                 align_items='start',

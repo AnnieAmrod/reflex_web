@@ -15,8 +15,11 @@ def link_button(title: str, body: str, url: str) -> rx.Component:
                     rx.text(body, style=styles.button_body_style),
                     align_items='start'
                 ),
-                align_items='center'
-            )
+                align_items='center',
+                # bg_color='#FFC4FC',
+                color='indigo'
+            ),
+            bg_color='#FFC4FC',
         ),
         href=url,
         is_external=True,
