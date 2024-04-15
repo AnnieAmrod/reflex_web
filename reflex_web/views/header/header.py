@@ -2,6 +2,7 @@ import reflex as rx
 from reflex_web.components.link_icon import link_icon
 from reflex_web.components.info_text import info_text
 from reflex_web.styles.colors import TextColor as TextColor
+from reflex_web.styles.colors import Color as Color
 import reflex_web.constants as url
 
 
@@ -12,9 +13,14 @@ def header() -> rx.Component:
                 name='Miriam Durán',
                 fallback='MD',
                 size='7',
-                # color_scheme='indigo',
-                color=TextColor.HEADER.value,
-                radius='full'
+                src='avatar.jpeg',
+                #bg=Color.CONTENT.value,
+                color_scheme='plum',
+                #color=TextColor.BODY.value,
+                radius='full',
+                padding='2px',
+                border='4px solid',
+                border_color=Color.SECONDARY.value
             ),
             rx.vstack(
                 rx.heading('Miriam Durán'),
