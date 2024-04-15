@@ -1,14 +1,18 @@
 import reflex as rx
+import reflex_web.styles.styles as styles
 from reflex_web.styles.styles import Size as Size
+from reflex_web.styles.colors import Color as Color
 
 
 def navbar() -> rx.Component:
     return rx.hstack(
-        rx.text(
-            'Miriam Durán'
+        rx.chakra.box(
+            rx.chakra.span('Ànnië', color=Color.PRIMARY.value),
+            rx.chakra.span('Amröd', color=Color.SECONDARY.value),
+            style=styles.navbar_title_style
         ),
         position='sticky',
-        bg='#f0f8ff',
+        bg=Color.CONTENT.value,
         padding_x=Size.DEFAULT.value,
         padding_y=Size.SMALL.value,
         z_index='999',

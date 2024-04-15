@@ -1,5 +1,5 @@
 # Cabecera
-INSTAGRAM_URL = ''
+INSTAGRAM_URL = 'https://www.instagram.com/annieamrod/'
 
 # Conóceme
 GITHUB_URL = 'https://github.com/AnnieAmrod'
@@ -9,3 +9,6 @@ CV_URL = 'https://drive.google.com/file/d/1FCx9B7ULWssIg2NEb95oGjFJAv68uwiO/view
 
 # Mis proyectos
 KAT_URL = 'https://kat-mascotas.online/'
+
+# Contacto
+EMAIL = 'miriam.duran.garcia@gmail.com'

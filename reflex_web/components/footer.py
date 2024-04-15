@@ -1,6 +1,7 @@
 import reflex as rx
 import datetime
 from reflex_web.styles.styles import Size as Size
+from reflex_web.styles.colors import TextColor as TextColor
 
 
 def footer() -> rx.Component:
@@ -19,6 +20,7 @@ def footer() -> rx.Component:
             'BUILDING SOFTWARE WITH ♥.',
             font_size=Size.MEDIUM.value,
         ),
-        margin_bottom=Size.BIG.value,
-        gap='0'
+        padding_bottom=Size.BIG.value,
+        gap='0',
+        color=TextColor.FOOTER.value
     )
