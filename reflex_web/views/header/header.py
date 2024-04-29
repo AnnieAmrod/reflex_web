@@ -29,8 +29,12 @@ def header() -> rx.Component:
                     color=TextColor.BODY.value
                 ),
                 rx.hstack(
-                    link_icon(url.INSTAGRAM_URL),
-                    margin_top='var(--space-2)'
+                    link_icon(
+                        'icons/instagram.svg',
+                        url.INSTAGRAM_URL
+                    ),
+                    margin_top='var(--space-2)',
+                    spacing='5'
                 ),
                 align_items='start',
                 gap='0'

@@ -1,7 +1,19 @@
 import reflex as rx
-import reflex_web.styles.styles as styles
+from reflex_web.styles.styles import Size as Size
 
 
+def link_icon(image: str, url: str) -> rx.Component:
+    return rx.link(
+        rx.image(
+            src=image,
+            width=Size.DEFAULT.value,
+        ),
+        href=url,
+        is_external=True
+    )
+
+
+'''
 def link_icon(url: str) -> rx.Component:
     return rx.link(
         rx.icon(
@@ -13,3 +25,4 @@ def link_icon(url: str) -> rx.Component:
         href=url,
         is_external=True
     )
+'''

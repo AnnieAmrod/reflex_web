@@ -12,3 +12,7 @@ KAT_URL = 'https://kat-mascotas.online/'
 
 # Contacto
 EMAIL = 'miriam.duran.garcia@gmail.com'
+
+# Sponsors
+JMD_URL = 'https://github.com/JoseMoraDev'
+GCP_URL = 'https://github.com/GabrielCrackPro'

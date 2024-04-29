@@ -24,6 +24,7 @@ class Size(Enum):
     DEFAULT = '1em'
     LARGE = '1.5em'
     BIG = '2em'
+    BIGGER = '4em'
 
 
 # Styles

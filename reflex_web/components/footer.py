@@ -2,17 +2,19 @@ import reflex as rx
 import datetime
 from reflex_web.styles.styles import Size as Size
 from reflex_web.styles.colors import TextColor as TextColor
+import reflex_web.constants as url
 
 
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src='favicon.ico',
-            margin_bottom='var(--space-2)'
+            src='logo.png',
+            margin_bottom='var(--space-2)',
+            height=Size.BIGGER.value
         ),
         rx.link(
             f'© {datetime.date.today().year} Miriam Durán v1.',
-            href='https://github.com/AnnieAmrod',
+            href=url.GITHUB_URL,
             is_external=True,
             font_size=Size.MEDIUM.value
         ),
