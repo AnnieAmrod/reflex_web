@@ -11,11 +11,13 @@ def sponsors() -> rx.Component:
         rx.chakra.responsive_grid(
             link_sponsor(
                 'josemoradev.jpeg',
-                url.JMD_URL
+                url.JMD_URL,
+                'Logotipo de JoseMoraDev'
             ),
             link_sponsor(
                 'gabrielcrackpro.png',
-                url.GCP_URL
+                url.GCP_URL,
+                'Logotipo de GabrielCrackPro'
             ),
             spacing='5',
             columns=[3, 6]

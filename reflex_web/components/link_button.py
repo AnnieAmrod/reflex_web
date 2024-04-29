@@ -13,6 +13,7 @@ def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
                     width=Size.LARGE.value,
                     height=Size.BIG.value,
                     margin=Size.MEDIUM.value,
+                    alt=title
 
                 ),
                 rx.vstack(

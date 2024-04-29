@@ -31,7 +31,8 @@ def header() -> rx.Component:
                 rx.hstack(
                     link_icon(
                         'icons/instagram.svg',
-                        url.INSTAGRAM_URL
+                        url.INSTAGRAM_URL,
+                        'Instagram'
                     ),
                     margin_top='var(--space-2)',
                     spacing='5'

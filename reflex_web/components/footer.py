@@ -10,7 +10,9 @@ def footer() -> rx.Component:
         rx.image(
             src='logo.png',
             margin_bottom='var(--space-2)',
-            height=Size.BIGGER.value
+            height=Size.BIGGER.value,
+            width=Size.BIGGER.value,
+            alt='Logotipo de AnnieAmrod. Una "o" con diéresis.'
         ),
         rx.link(
             rx.box(
