@@ -13,7 +13,12 @@ def footer() -> rx.Component:
             height=Size.BIGGER.value
         ),
         rx.link(
-            f'© {datetime.date.today().year} Miriam Durán v1.',
+            rx.box(
+                f'© 2024 ~ {datetime.date.today().year}',
+                rx.chakra.span(' Miriam Durán', color=TextColor.HEADER.value),
+                ' v1.',
+                color=TextColor.FOOTER.value
+            ),
             href=url.GITHUB_URL,
             is_external=True,
             font_size=Size.MEDIUM.value
@@ -23,6 +28,9 @@ def footer() -> rx.Component:
             font_size=Size.MEDIUM.value,
         ),
         padding_bottom=Size.BIG.value,
+        padding_x=Size.BIG.value,
         gap='0',
-        color=TextColor.FOOTER.value
+        spacing='5',
+        color=TextColor.FOOTER.value,
+        align_items='center'
     )

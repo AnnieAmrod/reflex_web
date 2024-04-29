@@ -8,6 +8,27 @@ from reflex_web.styles.styles import Size as Size
 def sponsors() -> rx.Component:
     return rx.vstack(
         title('Colaboradores'),
+        rx.chakra.responsive_grid(
+            link_sponsor(
+                'josemoradev.jpeg',
+                url.JMD_URL
+            ),
+            link_sponsor(
+                'gabrielcrackpro.png',
+                url.GCP_URL
+            ),
+            spacing='5',
+            columns=[3, 6]
+        ),
+        width='100%',
+        align_items='start'
+    )
+
+
+'''
+def sponsors() -> rx.Component:
+    return rx.vstack(
+        title('Colaboradores'),
         rx.hstack(
             link_sponsor(
                 'josemoradev.jpeg',
@@ -22,3 +43,4 @@ def sponsors() -> rx.Component:
         width='100%',
         align_items='start'
     )
+'''
