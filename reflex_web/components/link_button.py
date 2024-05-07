@@ -4,7 +4,7 @@ from reflex_web.styles.styles import Size as Size
 from reflex_web.styles.colors import Color as Color
 
 
-def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
+def link_button(title: str, body: str, image: str, url: str, is_external=True) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -30,7 +30,7 @@ def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
             ),
         ),
         href=url,
-        is_external=True,
+        is_external=is_external,
         width='100%',
     )
 

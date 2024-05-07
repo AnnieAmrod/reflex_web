@@ -1,4 +1,4 @@
-"""Styles for the app."""
+'''"""Styles for the app."""
 
 import reflex as rx
 
@@ -58,3 +58,4 @@ markdown_style = {
         },
     ),
 }
+'''

@@ -1,4 +1,4 @@
-"""The settings page."""
+'''"""The settings page."""
 
 from reflex_web.templates import ThemeState, template
 
@@ -59,3 +59,4 @@ def settings() -> rx.Component:
             size="1",
         ),
     )
+'''

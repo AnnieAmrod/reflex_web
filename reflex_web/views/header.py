@@ -6,14 +6,14 @@ from reflex_web.styles.colors import Color as Color
 import reflex_web.constants as url
 
 
-def header() -> rx.Component:
+def header(details = True) -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.avatar(
                 name='Miriam Durán',
                 fallback='MD',
                 size='7',
-                src='avatar.jpeg',
+                src='/avatar.jpeg',
                 #bg=Color.CONTENT.value,
                 color_scheme='plum',
                 #color=TextColor.BODY.value,
@@ -30,7 +30,7 @@ def header() -> rx.Component:
                 ),
                 rx.hstack(
                     link_icon(
-                        'icons/instagram.svg',
+                        '/icons/instagram.svg',
                         url.INSTAGRAM_URL,
                         'Instagram'
                     ),
@@ -43,19 +43,25 @@ def header() -> rx.Component:
             align_items='center',
             spacing='5'
         ),
-        rx.flex(
-            info_text('+3', 'años de experiencia'),
-            rx.spacer(),
-            info_text('+3', 'años de experiencia'),
-            rx.spacer(),
-            info_text('+3', 'años de experiencia'),
-            width='100%'
+        rx.cond(
+            details,
+            rx.vstack(
+                rx.flex(
+                    info_text('+3', 'años de experiencia'),
+                    # rx.spacer(),
+                    # info_text('2', 'aplicaciones desplegadas'),
+                    # rx.spacer(),
+                    # info_text('+3', 'años de experiencia'),
+                    width='100%',
+                ),
+                rx.text(
+                    '''Apasionada de la programación y el diseño web.
+                Soy perfeccionista, comprometida y creativa, con gran capacidad para el aprendizaje.
+                Busco la excelencia en cada proyecto que realizo.''',
+                    color=TextColor.BODY.value
+                ),
+                spacing='5'
+            ),
         ),
-        rx.text(
-            '''Apasionada de la programación y el diseño web.
-        Soy perfeccionista, comprometida y creativa, con gran capacidad para el aprendizaje.
-        Busco la excelencia en cada proyecto que realizo.''',
-            color=TextColor.BODY.value
-        ),
-        spacing='5'
+        spacing='5',
     )

@@ -1,4 +1,4 @@
-"""The dashboard page."""
+'''"""The dashboard page."""
 
 from reflex_web.templates import template
 
@@ -20,3 +20,4 @@ def dashboard() -> rx.Component:
             rx.code("{your_app}/pages/dashboard.py"),
         ),
     )
+'''

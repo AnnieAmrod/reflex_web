@@ -10,12 +10,12 @@ def sponsors() -> rx.Component:
         title('Colaboradores'),
         rx.chakra.responsive_grid(
             link_sponsor(
-                'josemoradev.jpeg',
+                '/josemoradev.jpeg',
                 url.JMD_URL,
                 'Logotipo de JoseMoraDev'
             ),
             link_sponsor(
-                'gabrielcrackpro.png',
+                '/gabrielcrackpro.png',
                 url.GCP_URL,
                 'Logotipo de GabrielCrackPro'
             ),

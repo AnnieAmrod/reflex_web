@@ -8,7 +8,7 @@ import reflex_web.constants as url
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src='logo.png',
+            src='/logo.png',
             margin_bottom='var(--space-2)',
             height=Size.BIGGER.value,
             width=Size.BIGGER.value,
@@ -25,9 +25,21 @@ def footer() -> rx.Component:
             is_external=True,
             font_size=Size.MEDIUM.value
         ),
-        rx.text(
-            'BUILDING SOFTWARE WITH ♥.',
-            font_size=Size.MEDIUM.value,
+        rx.link(
+            rx.hstack(
+                rx.image(
+                    src='/icons/github.svg',
+                    height=Size.DEFAULT.value,
+                    width=Size.DEFAULT.value
+                ),
+                rx.text(
+                    'BUILDING SOFTWARE WITH ♥.',
+                    font_size=Size.MEDIUM.value,
+                ),
+            ),
+            href=url.GITHUB_REPO,
+            is_external=True,
+            color=TextColor.HEADER.value,
         ),
         padding_bottom=Size.BIG.value,
         padding_x=Size.BIG.value,

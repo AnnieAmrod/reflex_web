@@ -1,4 +1,4 @@
-"""Sidebar component for the app."""
+'''"""Sidebar component for the app."""
 
 from reflex_web import styles
 
@@ -26,18 +26,18 @@ def sidebar_header() -> rx.Component:
                     height="3em",
                     padding="0.5em",
                 ),
-                box_shadow=styles.box_shadow,
+                # box_shadow=styles.box_shadow,
                 bg="transparent",
-                border_radius=styles.border_radius,
-                _hover={
-                    "bg": styles.accent_color,
-                },
+                # border_radius=styles.border_radius,
+                # _hover={
+                #     "bg": styles.accent_color,
+                # },
             ),
             href="https://github.com/reflex-dev/reflex",
         ),
         align="center",
         width="100%",
-        border_bottom=styles.border,
+        # border_bottom=styles.border,
         padding="1em",
     )
 
@@ -53,15 +53,15 @@ def sidebar_footer() -> rx.Component:
         rx.link(
             rx.text("Docs"),
             href="https://reflex.dev/docs/getting-started/introduction/",
-            style=styles.link_style,
+            # style=styles.link_style,
         ),
         rx.link(
             rx.text("Blog"),
             href="https://reflex.dev/blog/",
-            style=styles.link_style,
+            # style=styles.link_style,
         ),
         width="100%",
-        border_top=styles.border,
+        # border_top=styles.border,
         padding="1em",
     )
 
@@ -103,8 +103,8 @@ def sidebar_item(text: str, icon: str, url: str) -> rx.Component:
                 styles.text_color,
             ),
             align="center",
-            border_radius=styles.border_radius,
-            box_shadow=styles.box_shadow,
+            # border_radius=styles.border_radius,
+            # box_shadow=styles.box_shadow,
             width="100%",
             padding_x="1em",
         ),
@@ -144,9 +144,10 @@ def sidebar() -> rx.Component:
             height="100dvh",
         ),
         display=["none", "none", "block"],
-        min_width=styles.sidebar_width,
+        # min_width=styles.sidebar_width,
         height="100%",
         position="sticky",
         top="0px",
-        border_right=styles.border,
+        # border_right=styles.border,
     )
+'''

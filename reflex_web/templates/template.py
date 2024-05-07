@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from reflex_web import styles
+# from reflex_web import styles
 from reflex_web.components.sidebar import sidebar
 from typing import Callable
 
@@ -26,8 +26,8 @@ def menu_item_link(text, href):
             color="inherit",
         ),
         _hover={
-            "color": styles.accent_color,
-            "background_color": styles.accent_text_color,
+            # "color": styles.accent_color,
+            # "background_color": styles.accent_text_color,
         },
     )
 
@@ -38,7 +38,7 @@ def menu_button() -> rx.Component:
     Returns:
         The menu button component.
     """
-    from reflex.page import get_decorated_pages
+    # from reflex.page import get_decorated_pages
 
     return rx.box(
         rx.menu.root(
@@ -46,15 +46,15 @@ def menu_button() -> rx.Component:
                 rx.icon(
                     "menu",
                     size=36,
-                    color=styles.accent_text_color,
+                    # color=styles.accent_text_color,
                 ),
-                background_color=styles.accent_color,
+                # background_color=styles.accent_color,
             ),
             rx.menu.content(
-                *[
+               ''' *[
                     menu_item_link(page["title"], page["route"])
                     for page in get_decorated_pages()
-                ],
+                ],''',
                 rx.menu.separator(),
                 menu_item_link("About", "https://github.com/reflex-dev"),
                 menu_item_link("Contact", "mailto:founders@=reflex.dev"),
@@ -115,9 +115,9 @@ def template(
                 rx.box(
                     rx.box(
                         page_content(),
-                        **styles.template_content_style,
+                        # **styles.template_content_style,
                     ),
-                    **styles.template_page_style,
+                    # **styles.template_page_style,
                 ),
                 menu_button(),
                 align="start",
@@ -137,7 +137,7 @@ def template(
         def theme_wrap():
             return rx.theme(
                 templated_page(),
-                accent_color=ThemeState.accent_color,
+                # accent_color=ThemeState.accent_color,
             )
 
         return theme_wrap
