@@ -11,6 +11,7 @@ CV_URL = 'https://drive.google.com/file/d/1FCx9B7ULWssIg2NEb95oGjFJAv68uwiO/view
 DAW_SCHEDULE = 'http://la.clase.del.desfase.surge.sh/'
 KAT_URL = 'https://kat-mascotas.online/'
 STOCK_MANAGEMENT_URL = 'https://github.com/AnnieAmrod/Sistema-de-control-de-stock'
+WP_DIVI = 'https://miriam-duran.surge.sh'
 
 # Contacto
 EMAIL = 'miriam.duran.garcia.1996@gmail.com'
@@ -21,3 +22,4 @@ GCP_URL = 'https://github.com/GabrielCrackPro'
 
 # Recursos y más
 GITHUB_REPO = 'https://github.com/AnnieAmrod/reflex_web'
+TELEGRAM = 'https://t.me/annieamrod'

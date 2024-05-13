@@ -28,6 +28,12 @@ def projects_links() -> rx.Component:
             '/icons/clipboard-list-solid.svg',
             url.STOCK_MANAGEMENT_URL
         ),
+        link_button(
+            'Proyectos reales',
+            '''Desarrollos realizados con las herramientas Elementor y Divi de WordPress''',
+            '/icons/wordpress.svg',
+            url.WP_DIVI
+        ),
         width='100%',
         spacing='3'
     )
