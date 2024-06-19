@@ -28,7 +28,7 @@ def projects() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                header(details=False),
+                header(False),
                 projects_links(),
                 sponsors(),
                 max_width=styles.MAX_WIDTH,

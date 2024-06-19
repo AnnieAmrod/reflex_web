@@ -11,8 +11,8 @@ from reflex_web.pages.index import index  # *NO QUITAR, SINO NO FUNCIONA
 from reflex_web.pages.projects import projects  # *NO QUITAR, SINO NO FUNCIONA
 
 
-'''class State(rx.State):
-    """Define empty state to allow access to rx.State.router."""'''
+class State(rx.State):
+    """Define empty state to allow access to rx.State.router."""
 
 
 # Create the app.

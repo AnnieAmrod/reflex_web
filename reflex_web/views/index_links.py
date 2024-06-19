@@ -47,7 +47,7 @@ def index_links() -> rx.Component:
             '''Listado de proyectos que he realizado durante mi carrera profesional''',
             '/icons/laptop-code-solid.svg',
             Route.PROJECTS.value,
-            is_external=False
+            False
         ),
 
         title('Contacto'),

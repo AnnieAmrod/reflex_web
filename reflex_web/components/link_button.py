@@ -1,7 +1,6 @@
 import reflex as rx
 import reflex_web.styles.styles as styles
 from reflex_web.styles.styles import Size as Size
-from reflex_web.styles.colors import Color as Color
 
 
 def link_button(title: str, body: str, image: str, url: str, is_external=True) -> rx.Component:
